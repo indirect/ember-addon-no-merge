@@ -3,7 +3,9 @@ var EmberApp = require('ember-cli/lib/broccoli/ember-addon');
 
 module.exports = function(defaults) {
   var app = new EmberApp(defaults, {
-    // Add options here
+    inlineContent: {
+      'something-inline': {content: "THIS SHOULD SHOW UP IN THE BUILT INDEX"}
+    }
   });
 
   /*
